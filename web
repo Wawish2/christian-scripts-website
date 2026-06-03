@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FaithBase - Stories That Inspire Faith</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Arial', sans-serif;
+    background:#0b0f1a;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(11,15,26,1)),
+    url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65');
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#d4a017;
+    margin:0;
+    letter-spacing:2px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin-top:15px;
+    color:#ddd;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    background:#1f4e79;
+    border:none;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#d4a017;
+    color:black;
+}
+
+/* SECTION */
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* FEATURED */
+.featured{
+    background:#11182b;
+    border-left:4px solid #d4a017;
+    padding:30px;
+    border-radius:10px;
+}
+
+.featured h2{
+    color:#d4a017;
+}
+
+/* SCRIPT BOX */
+.script-box{
+    background:#0f1626;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+    line-height:1.6;
+}
+
+.tag{
+    display:inline-block;
+    padding:5px 10px;
+    background:#1f4e79;
+    margin:5px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    overflow:auto;
+}
+
+.modal-content{
+    background:#11182b;
+    margin:5% auto;
+    padding:30px;
+    width:90%;
+    max-width:800px;
+    border-radius:10px;
+}
+
+.close{
+    float:right;
+    cursor:pointer;
+    color:red;
+    font-size:25px;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    background:#0b0f1a;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>FaithBase</h1>
+    <p>Stories That Inspire Faith — Cinematic Christian Stage Plays & Biblical Dramas</p>
+    <button class="btn" onclick="openScript()">Watch Featured Script</button>
+</div>
+
+<!-- FEATURED -->
+<section>
+    <div class="featured">
+        <h2>Featured Script</h2>
+        <h1>14 Years: For What?</h1>
+
+        <div>
+            <span class="tag">5 Acts</span>
+            <span class="tag">2–3 Hours</span>
+            <span class="tag">~19 Characters</span>
+            <span class="tag">Genesis Story</span>
+        </div>
+
+        <div class="script-box">
+            A cinematic Christian stage play based on Jacob’s journey in 
+            <b>Genesis</b>. A story of love, deception, waiting, brokenness, 
+            and divine transformation.
+            <br><br>
+            Jacob works seven years for Rachel, only to be deceived into marrying Leah.
+            He then works another seven years — questioning everything:
+            <br><br>
+            <i>"Fourteen years… for what?"</i>
+        </div>
+
+        <button class="btn" onclick="openScript()">Read Full Script</button>
+        <button class="btn" onclick="alert('PDF download coming soon')">Download PDF</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2 style="color:#d4a017;">About FaithBase</h2>
+    <p style="color:#ccc; line-height:1.7;">
+        FaithBase is a cinematic Christian storytelling platform created to bring 
+        Bible stories to life through stage plays, drama scripts, and creative storytelling.
+        <br><br>
+        Built by Emmanuel Mbiru.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 FaithBase | Stories That Inspire Faith
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeScript()">&times;</span>
+
+        <h1 style="color:#d4a017;">14 Years: For What?</h1>
+
+        <p><b>Act Structure:</b></p>
+        <ul>
+            <li>Act 1: Love & Promise</li>
+            <li>Act 2: Betrayal</li>
+            <li>Act 3: The Cost</li>
+            <li>Act 4: The Sons</li>
+            <li>Act 5: Peniel</li>
+        </ul>
+
+        <hr>
+
+        <p style="line-height:1.8;">
+        Jacob’s journey begins with love but is shaped by deception.
+        He works fourteen years for Rachel, only to discover that waiting
+        is not punishment — it is transformation.
+        <br><br>
+        In the end, he does not just get Rachel…
+        <br>
+        <b>He becomes Israel.</b>
+        </p>
+    </div>
+</div>
+
+<script>
+function openScript(){
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeScript(){
+    document.getElementById("modal").style.display = "none";
+}
+
+window.onclick = function(event){
+    let modal = document.getElementById("modal");
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
