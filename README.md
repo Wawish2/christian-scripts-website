@@ -403,6 +403,19 @@ document.getElementById("scriptModal");
 if(event.target === modal){
 closeModal();
 }
+    FaithStage
+│
+├── Home
+├── About
+├── Script Library
+│   ├── Add Script
+│   ├── Edit Script
+│   ├── Delete Script
+│   └── Search Script
+│
+└── Contact
+
+    
 
 }
 
