@@ -55,6 +55,13 @@ Contact
 | The Prodigal Son    |
 | The Waiting Room    |
 
+FaithBase
+Stories That Inspire Faith
+
+Christian stage plays, Bible dramas, and faith-based storytelling.
+
+[Read Featured Script]
+[Explore Library]
 
 FaithBase
 
