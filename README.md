@@ -67,5 +67,32 @@ FaithBase
 
 Home
 Scripts
+
+FAITHBASE
+│
+├── HERO (Trailer Section)
+│   ├── Title animation
+│   ├── “Watch Featured Story”
+│
+├── FEATURED SCRIPT (MOVIE POSTER STYLE)
+│   ├── 14 Years: For What?
+│   ├── Play / Read / Download
+│
+├── SCRIPT LIBRARY (NETFLIX STYLE GRID)
+│   ├── Cards with hover glow
+│   ├── Categories
+│
+├── STORY PREVIEW MODE
+│   ├── Acts view
+│   ├── Dialogue scrolling
+│
+└── ABOUT (MINISTRY FILM STYLE)
 About
 Contact
+
+┌──────────────────────────┐
+│ 14 YEARS: FOR WHAT?      │
+│ Genesis Drama            │
+│ 5 Acts • 19 Characters   │
+│ [ Watch ] [ Read ]       │
+└──────────────────────────┘
