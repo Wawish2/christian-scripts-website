@@ -1,3 +1,9 @@
 #1F4E79
 #D4A017
 #F8F9FA
+FaithBase
+
+Home
+Scripts
+About
+Contact
