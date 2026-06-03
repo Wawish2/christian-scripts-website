@@ -9,3 +9,9 @@ Home
 │   └── Youth Drama Collection
 │
 └── Contact
++----------------------+
+| DAVID AND GOLIATH    |
+| Youth Drama          |
+| 15 Minutes           |
+| [Read Script]        |
++----------------------+
